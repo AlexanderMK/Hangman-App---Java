@@ -35,7 +35,7 @@ public class HangmanTest {
 
     // to prevent entering an empty guess
     @Test
-    public void givingAnEmptyGuessIsNotAllowed() throws Exception {
+    public void givingAnEmptyGuessIsNotAllowed() Exception {
         exception.expect(IllegalArgumentException.class);
         exception.expectMessage("Please make sure to enter a guess");
 
