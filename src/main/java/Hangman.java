@@ -56,12 +56,12 @@ public class Hangman {
     }
 
     // used to return the answer
-    public String getnswer() {
+    public String getAnswer() {
         return answer;
     }
 
     //used to return the hits
-    public String getHits() {
+    public String getits() {
         return hits;
     }
 
