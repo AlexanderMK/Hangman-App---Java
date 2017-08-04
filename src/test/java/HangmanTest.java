@@ -44,7 +44,7 @@ public class HangmanTest {
 
     // to make the guess that is already been made not to be allowed
     @Test
-    public void makingAGuessThatIsAlreadyBeenMadeIsNotAllowed() throws Exception {
+    public void makingAGuessThatIsAlreadyBeenMadeIsNotAllowed() Exception {
         exception.expect(IllegalArgumentException.class);
         exception.expectMessage("You already made this guess ");
 
