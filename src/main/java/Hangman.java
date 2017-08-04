@@ -67,7 +67,7 @@ public class Hangman {
 
     // used to return the misses
     public String getMisses() {
-        return misses;
+        return mises;
     }
 
 
