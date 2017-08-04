@@ -5,7 +5,7 @@ Alexander M. K
 This is a java game where you guess the words, you are given 7 trials. Make right guesses only to win.
 
 # Github-link
-https://github.com/collinsmwiti/hangman.github.io
+https://github.com/AlexanderMK/Hangman-App---Java
 
 # Contacts
 To find me, here is my account mburukungu@gmail.com
