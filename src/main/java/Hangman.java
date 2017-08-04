@@ -56,7 +56,7 @@ public class Hangman {
     }
 
     // used to return the answer
-    public String getAnswer() {
+    public String getnswer() {
         return answer;
     }
 
