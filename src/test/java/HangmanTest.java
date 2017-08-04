@@ -44,7 +44,7 @@ public class HangmanTest {
 
     // to make the guess that is already been made not to be allowed
     @Test
-    public void makingAGuessThatIsAlreadyBeenMadeIsNotAllowed() Exception {
+    public void makingAGuessThatIsAlreadyBeenMadeIsNotAllowed() throws Exception {
         exception.expect(IllegalArgumentException.class);
         exception.expectMessage("You already made this guess ");
 
@@ -54,7 +54,7 @@ public class HangmanTest {
 
     // if you have entered your guesses correctly (atleast once) you win
     @Test
-    public void enteringAllCharactersInTheAnswerAtLeastOnceResultsInWinningTheGame() throws Exception{
+    public void enteringAllCharactersInTheAnswerAtLeastOnceResultsInWinningTheGame() Exception{
         hangman.applyGuess("c");
         hangman.applyGuess("o");
         hangman.applyGuess("l");
