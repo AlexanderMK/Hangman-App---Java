@@ -25,4 +25,50 @@ public class Hangman {
        return isCorrect;
   }
 
+  public boolean applyGuess(String s) {
+        if (s.length() == 0) {
+            throw new IllegalArgumentException("Please make sure to enter a guess");
+        }
+        return applyGuess(s.charAt(0));
+    }
+
+    // used for display amount of characters guessed in the console
+    public String getCurrentProgress() {
+        String progress = "";
+        for (char c : answer.toCharArray()) {
+            char display = '-';
+            if (hits.indexOf(c) != -1) {
+                display = c;
+            }
+            progress += display;
+        }
+        return progress;
+    }
+
+    // is used to determine if you have won the game
+    public boolean isWon(){
+        String progress = getCurrentProgress();
+        if(progress.indexOf('-') == -1){
+            return true ;
+        } else {
+            return false;
+        }
+    }
+
+    // used to return the answer
+    public String getAnswer() {
+        return answer;
+    }
+
+    //used to return the hits
+    public String getHits() {
+        return hits;
+    }
+
+    // used to return the misses
+    public String getMisses() {
+        return misses;
+    }
+
+
 }
