@@ -29,7 +29,7 @@ public class Hangman {
         if (s.length() == 0) {
             throw new IllegalArgumentException("Please make sure to enter a guess");
         }
-        return applyGuess(s.charAt());
+        return applyGuess(s.charAt(0));
     }
 
     // used for display amount of characters guessed in the console
@@ -40,7 +40,7 @@ public class Hangman {
             if (hits.indexOf(c) != -1) {
                 display = c;
             }
-            progress += display;
+            progress += dispay;
         }
         return progress;
     }
